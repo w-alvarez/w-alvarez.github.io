@@ -30,7 +30,7 @@ img.nav-icon {
     padding: 10px 20px;
     width: 50px;
     height: 50px;
-    border: 0px;
+    border: 0;
 
 }
 /** patriots width must be 1.7x of other nav icons to maintain aspect ratio/gravity in nav bar */
