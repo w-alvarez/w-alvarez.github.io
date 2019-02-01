@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'OrdealEroded';
+    src: url("fonts/Ordeal-Eroded-FFP.ttf");
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: RobotoRegular, sans-serif;
+}
+div.team-nav-banner {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+img.nav-icon {
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+
+}
+/** patriots width must be 1.7x of other nav icons to maintain aspect ratio/gravity in nav bar */
+img.nav-patriots {
+    width: 85px;
+}
+
+div.team-sub-banner {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'OrdealEroded', sans-serif;
+}
+
+img.team-header {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+span.bg-team-name {
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -20%);
+    white-space: nowrap;
+    float: left;
+    font-size: 100px;
+    line-height: 0.6;
+    text-transform: uppercase;
+    color: white;
+}
+
+div.author-blurb {
+    display: flex;
+}
+
+div.author-portrait {
+    margin-top: 50px;
+    max-width: 12.5%;
+    max-height: 12.5%;
+    padding-right: 10px;
+}
+
+img.author-portrait {
+    border: 1px solid black;
+    border-radius: 125%;
+    width: 100%;
+}
+
+div.result-and-factoids {
+    width: 80%;
+    font-family: "RobotoLight", sans-serif;
+}
+
+div.game-result {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 10pt;
+    background-color: #fafafa;
+    border: 1px solid #ececec;
+    height: 115px;
+    padding-right: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+div.result-left-wrap {
+    flex-direction: column;
+    width: 10%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding: 10px 10px;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #00b664;
+    opacity: 0.4;
+}
+
+div.result-middle-wrap {
+    display: flex;
+    width: 40%;
+    height: 90%;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 14pt;
+    padding: 15px;
+}
+
+img.result-opponent-logo {
+    max-height: 75%;
+    max-width: 75%;
+}
+
+div.result-right-wrap {
+    display: flex;
+    padding: 5px 1px;
+    font-size: 10pt;
+    width: 40%;
+    height: 90%;
+    justify-content: right;
+    align-items: center;
+}
+
+img.top-player {
+    border-radius: 5px;
+    border: 1px solid #00b664;
+    max-width: 65px;
+    max-height: 90px;
+}
+
+div.top-stats {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    line-height: 0.6;
+    height: 90%;
+    margin: 10px;
+    border-right: 2px solid #00b664;
+}
+
+div.show-details {
+    height: 90%;
+    width: 15%;
+    line-height: 0.6;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img.img-details {
+    max-height: 75%;
+    max-width: 75%;
+    align-content: center;
+}
+
+p.show-details {
+    font-family: "RobotoLight", sans-serif;
+    color: #00b664;
+}
+
+a.home {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** MLB - Red Sox*/
+
+img.sox-champs {
+    display: block;
+    border: 1px solid #B83039;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.mlb-game-result {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+table.nfl-game-result, table.qb-comparison {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+div.img-container {
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+
+img.table-team-logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.sport-teamdata {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    text-align: -moz-left;
+    line-height: 1.2;
+}
+
+p.team-record, td.mlb-series-standing {
+    font-size: 10px;
+    line-height: 14px;
+    color: gray;
+}
+
+
+table.mlb-game-result th, tr, td {
+    font-family: 'RobotoRegular', sans-serif;
+    text-align: left;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+/** NFL - Patriots */
+h3.pats-header, h4.pats-header, p.pats-header {
+    text-align: center;
+}
+
+div.pats-games-nav {
+    margin: auto;
+    height: 100px;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+}
+
+div.playoff-nav-item {
+    float: left;
+    min-width: 30%;
+    padding: 10px;
+}
+
+img.pats-playoffs-nav-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table.nfl-game-result th, tr, td, table.qb-comparison th, tr, td {
+    font-family: 'RobotoRegular', sans-serif;
+    text-align: center;
+    text-align: -moz-center;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.qb-comparison th, tr, td, .nfl-record {
+    width: fit-content;
+    text-align: center;
+}
+
+.nfl-team-info {
+    width: 100%;
+
+}
+
+td.nfl-seed, th.hdr-first-col {
+    text-align: left !important;
+    text-align: -moz-left;
+    vertical-align: middle;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding-left: 10px;
+}
+
+span.team-winner {
+    font-weight: bolder;
+}
+
+td.score-winner {
+    font-weight: bolder;
+}
+
+tr.tbl-spacer {
+    border-top: 1px solid #ececec;
+    height: 20px;
+}
+
+iframe.pats-vid {
+    margin: 0 auto;
+    display: block;
+}
+
+/* NHL - Bruins*/
+
+div.nhl-grid-calendar-outmost {
+    width: 100% !important;
+}
+
+table.calendar-headers {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+table.calendar-headers td {
+    padding-bottom: 10px;
+    width: 14.286%;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+table.calendar-grid {
+    width: 100%;
+}
+table.calendar-grid td {
+    width: 14.286% !important;
+    border: 1px solid #ececec;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    background-color: white;
+    vertical-align: top;
+    overflow: visible;
+}
+
+td.calendar-date-cell-home {
+    background-color: #ffb81c !important;
+    color: white;
+}
+
+td.calendar-date-cell-away {
+    background-color: #eeeeee !important;
+}
+
+div.cell-date, div.cell-date-home, div.cell-date-away {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 14pt;
+    color: gray;
+    text-align: left;
+    text-align: -moz-left;
+    padding: 8px 0 0 8px;
+}
+
+div.cell-date-home {
+    color: white;
+}
+
+div.cell-details {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.cell-opp-logo {
+    max-width: 66.66%;
+    max-height: 66.66%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+span.cell-score, p.team-record {
+    width: 100%;
+    text-align: center;
+    text-align: -moz-center;
+}
