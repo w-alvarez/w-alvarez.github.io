@@ -18,6 +18,12 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
     text-shadow: 2px 2px black;
 }
+
+#home-title {
+    color: black;
+    text-shadow: none;
+}
+
 div.team-nav-banner {
     width: auto;
     display: flex;
@@ -67,22 +73,25 @@ span.bg-team-name {
 
 div.author-blurb {
     display: flex;
-    margin-top: 50px;
+    vertical-align: middle;
+    justify-content: center;
 }
 
 div.author-portrait {
-    max-width: 12.5%;
-    max-height: 12.5%;
+    max-width: 25%;
+    max-height: 25%;
     padding-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
-div.author-desc {
+p.author-desc {
     vertical-align: middle;
+    max-width: 500px;
 }
 
 img.author-portrait {
-    border: 1px solid black;
-    border-radius: 125%;
+    border-radius: 50%;
     width: 100%;
 }
 
@@ -90,9 +99,14 @@ body.body-home, body.pats-body, body.bruins-body, body.celtics-body, body.redsox
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 960px;
     margin: auto;
+    padding: 0 10px 0 10px;
+    align-content: center;
 
+}
+
+body.body-home {
+    max-width: 960px;
 }
 
 body.pats-body {
@@ -100,7 +114,7 @@ body.pats-body {
 }
 
 body.bruins-body{
-    background-image: url("images/bruins-td.JPG");
+    background-image: url("images/bruins-td.jpg");
 }
 
 body.celtics-body {
@@ -114,6 +128,8 @@ body.redsox-body {
 div.result-and-factoids {
     width: fit-content;
     width: -moz-fit-content;
+    margin: auto;
+    display: block;
     font-family: "RobotoLight", sans-serif;
 }
 
@@ -243,6 +259,7 @@ table.mlb-game-result {
 
 table.nfl-game-result, table.qb-comparison {
     width: 40%;
+    min-width: 390px;
     display: inline-block;
     border-collapse: collapse;
     padding: 5px;
@@ -296,7 +313,6 @@ h3.pats-header, h4.pats-header, p.pats-header {
 
 div.pats-games-nav {
     margin: auto;
-    height: 100px;
     width: 40%;
     padding: 10px;
     display: flex;
@@ -305,14 +321,13 @@ div.pats-games-nav {
 
 div.playoff-nav-item {
     margin: auto;
-    min-width: 30%;
+    width: 30%;
     padding: 10px;
-    vertical-align: middle;
+    display: block;
 }
 
 img.pats-playoffs-nav-icon {
     max-width: 100%;
-    max-height: 100%;
 }
 
 table.nfl-game-result th, tr, td, table.qb-comparison th, tr, td {
@@ -369,6 +384,9 @@ h1.bruins-header {
 
 div.nhl-grid-calendar-outmost {
     width: 100% !important;
+    max-width: 1150px;
+    display: block;
+    margin: auto auto 20px;
 }
 
 table.calendar-headers {
