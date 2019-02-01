@@ -65,13 +65,17 @@ span.bg-team-name {
 
 div.author-blurb {
     display: flex;
+    margin-top: 50px;
 }
 
 div.author-portrait {
-    margin-top: 50px;
     max-width: 12.5%;
     max-height: 12.5%;
     padding-right: 10px;
+}
+
+div.author-desc {
+    vertical-align: middle;
 }
 
 img.author-portrait {
