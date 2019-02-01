@@ -15,6 +15,8 @@
 
 h1,h2,h3,h4,h5,h6 {
     font-family: RobotoRegular, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 div.team-nav-banner {
     width: auto;
@@ -84,8 +86,34 @@ img.author-portrait {
     width: 100%;
 }
 
+body.body-home, body.pats-body, body.bruins-body, body.celtics-body, body.redsox-body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 960px;
+    margin: auto;
+
+}
+
+body.pats-body {
+    background-image: url("images/gilette-stadium.jpg");
+}
+
+body.bruins-body{
+    background-image: url("images/bruins-td.JPG");
+}
+
+body.celtics-body {
+    background-image: url("images/celtics-td.jpg");
+}
+
+body.redsox-body {
+    background-image: url("images/redsox-fenway.jpg");
+}
+
 div.result-and-factoids {
-    width: 80%;
+    width: fit-content;
+    width: -moz-fit-content;
     font-family: "RobotoLight", sans-serif;
 }
 
@@ -177,11 +205,18 @@ p.show-details {
     color: #00b664;
 }
 
+ul.celtics-facts {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
 a.home {
-    display: block;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 /** MLB - Red Sox*/
@@ -203,12 +238,12 @@ table.mlb-game-result {
     padding: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 table.nfl-game-result, table.qb-comparison {
     width: 40%;
     display: inline-block;
-    border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
     margin-left: 30%;
@@ -253,8 +288,10 @@ table.mlb-game-result th, tr, td {
 }
 
 /** NFL - Patriots */
+
 h3.pats-header, h4.pats-header, p.pats-header {
     text-align: center;
+    color: white;
 }
 
 div.pats-games-nav {
@@ -263,12 +300,14 @@ div.pats-games-nav {
     width: 40%;
     padding: 10px;
     display: flex;
+    vertical-align: middle;
 }
 
 div.playoff-nav-item {
-    float: left;
+    margin: auto;
     min-width: 30%;
     padding: 10px;
+    vertical-align: middle;
 }
 
 img.pats-playoffs-nav-icon {
@@ -282,6 +321,7 @@ table.nfl-game-result th, tr, td, table.qb-comparison th, tr, td {
     text-align: -moz-center;
     padding-right: 10px;
     padding-bottom: 5px;
+    background-color: white;
 }
 
 .qb-comparison th, tr, td, .nfl-record {
@@ -323,6 +363,10 @@ iframe.pats-vid {
 
 /* NHL - Bruins*/
 
+h1.bruins-header {
+    color: white;
+}
+
 div.nhl-grid-calendar-outmost {
     width: 100% !important;
 }
@@ -339,6 +383,7 @@ table.calendar-headers {
 table.calendar-headers td {
     padding-bottom: 10px;
     width: 14.286%;
+    color: black;
     text-align: left;
     padding-left: 8px;
     padding-right: 8px;
