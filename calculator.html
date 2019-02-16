@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1" charset="UTF-8">
+    <title>Walter's Calculator</title>
+    <link rel="stylesheet"
+          media="only screen and (max-width: 600px), all"
+          href="style.css">
+    <script type="text/javascript" src="buttonmapping.js"></script>
+</head>
+
+<body>
+    <div id="calc-master">
+        <div class="text-fields">
+            <div id="calc-history" class="calc-row">
+                <span id="history-text"></span>
+            </div>
+            <div id="current-expression" class="calc-row">
+                <span id="current-text"></span>
+            </div>
+        </div>
+
+        <div class="buttons">
+           <div id="brackets-and-clear" class="calc-row">
+               <div class="calc-row-thirds">
+                   <div id="left-bracket" class="calc-button" onclick="mapBtnAction(this.id)">(</div>
+               </div>
+               <div class="calc-row-thirds">
+                   <div id="right-bracket" class="calc-button" onclick="mapBtnAction(this.id)">)</div>
+               </div>
+               <div id="clear" class="calc-row-thirds">
+                   <div id="clear-content" class="calc-button" onclick="mapBtnAction(this.id)">CE</div>
+               </div>
+           </div>
+
+           <div id="seven-through-division" class="calc-row">
+               <div class="calc-row-quarters">
+                   <div id="seven" class="calc-button" onclick="mapBtnAction(this.id)">7</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="eight" class="calc-button" onclick="mapBtnAction(this.id)">8</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="nine" class="calc-button" onclick="mapBtnAction(this.id)">9</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="division" class="calc-button" onclick="mapBtnAction(this.id)">/</div>
+               </div>
+           </div>
+
+           <div id="four-through-mult" class="calc-row">
+               <div class="calc-row-quarters">
+                   <div id="four" class="calc-button" onclick="mapBtnAction(this.id)">4</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="five" class="calc-button" onclick="mapBtnAction(this.id)">5</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="six" class="calc-button" onclick="mapBtnAction(this.id)">6</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="multiplication" class="calc-button" onclick="mapBtnAction(this.id)">x</div>
+               </div>
+           </div>
+
+           <div id="one-through-sub" class="calc-row">
+               <div class="calc-row-quarters">
+                   <div id="one" class="calc-button" onclick="mapBtnAction(this.id)">1</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="two" class="calc-button" onclick="mapBtnAction(this.id)">2</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="three" class="calc-button" onclick="mapBtnAction(this.id)">3</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="subtraction" class="calc-button" onclick="mapBtnAction(this.id)">-</div>
+               </div>
+           </div>
+
+           <div id="zero-through-plus" class="calc-row">
+               <div class="calc-row-quarters">
+                   <div id="zero" class="calc-button" onclick="mapBtnAction(this.id)">0</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="decimal" class="calc-button" onclick="mapBtnAction(this.id)">.</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="equals" class="calc-button" onclick="mapBtnAction(this.id)">=</div>
+               </div>
+               <div class="calc-row-quarters">
+                   <div id="addition" class="calc-button" onclick="mapBtnAction(this.id)">+</div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,33 +1,19 @@
 #calc-master {
-    width: 600px;
-    margin: auto;
     border: 1px solid #ececec;
     border-radius: 30px;
     background-color: mediumpurple;
 
 }
 
-#history-text, #current-text {
-    width: 100%;
-    font-size: 32pt;
-    vertical-align: middle;
-    text-align: center;
-    padding-right: 20px;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #calc-master {
         width: 100%;
-        height: 100%;
         margin: 0;
-    }
-    #history-text, #current-text {
-        font-size: 18pt;
     }
 }
 
 div.spacer {
-    height: 40px;
+    height: 55px;
 }
 
 div.text-fields {
@@ -51,7 +37,7 @@ div.calc-row {
 
 #calc-history, #current-expression {
     height: 40%;
-    margin: auto;
+    margin: auto auto 20px;
     line-height: 75px;
     text-align: right;
     text-align: -moz-right;
@@ -62,6 +48,14 @@ div.calc-row {
     background-color: white;
 }
 
+#history-text, #current-text {
+    width: 100%;
+    font-size: 32pt;
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 20px;
+}
+
 div.calc-row-thirds, div.calc-row-quarters {
     height: 100%;
     line-height: 80px;
@@ -69,7 +63,7 @@ div.calc-row-thirds, div.calc-row-quarters {
     vertical-align: middle;
 }
 
-div.calc-row-thirds, div.calc-row-quarters {
+#left-bracket, #right-bracket {
     width: 20%;
 }
 
@@ -90,4 +84,8 @@ div.calc-button {
     height: 80%;
     width: 80%;
     margin: 10px 0 10px 10px;
+}
+
+div.calc-row-quarters {
+    width: 20%;
 }
