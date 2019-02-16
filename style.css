@@ -64,7 +64,7 @@ div.calc-row {
 
 div.calc-row-thirds, div.calc-row-quarters {
     height: 100%;
-    line-height: 80px;
+    line-height: 60px;
     display: inline-block;
     vertical-align: middle;
 }
